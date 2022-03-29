@@ -1,0 +1,9 @@
+{
+	"name": "skythread-test",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c1f2d018-08b2-4ccf-be1f-a6660fa920e0",
+		"tenantId": "c7e6d86c-1cb9-45e0-bc61-c8b7cb486508"
+	}
+}
