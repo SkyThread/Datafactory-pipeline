@@ -1,0 +1,112 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "skythread-test"
+		},
+		"ADLSGen2_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'ADLSGen2'"
+		},
+		"AzureBlobStorage_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage'"
+		},
+		"AzureTableStorage1_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureTableStorage1'"
+		},
+		"linkedService_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'linkedService'"
+		},
+		"skythreadtest1_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'skythreadtest1'"
+		},
+		"skythreadtestcontainer1_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'skythreadtestcontainer1'"
+		},
+		"ADLSGen2_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://testblobstoragecont.dfs.core.windows.net"
+		},
+		"skythreadtest1_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://skythreaddstest.dfs.core.windows.net"
+		},
+		"skythreadtestcontainer1_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://skythreadtest.dfs.core.windows.net"
+		},
+		"trigger1_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/0b028fc8-1762-44d8-9baa-e91ff8577ac3/resourceGroups/DefaultResourceGroup-CUS/providers/Microsoft.Storage/storageAccounts/skythreaddstest"
+		},
+		"containerUri": {
+			"type": "string",
+			"metadata": "URI to storage account containing linked ARM templates"
+		},
+		"containerSasToken": {
+			"type": "string",
+			"metadata": "Sas token to storage account containing linked ARM templates"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "skythread-test_ArmTemplate_0",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_0.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"ADLSGen2_accountKey": {
+						"value": "[parameters('ADLSGen2_accountKey')]"
+					},
+					"AzureBlobStorage_connectionString": {
+						"value": "[parameters('AzureBlobStorage_connectionString')]"
+					},
+					"AzureTableStorage1_connectionString": {
+						"value": "[parameters('AzureTableStorage1_connectionString')]"
+					},
+					"linkedService_connectionString": {
+						"value": "[parameters('linkedService_connectionString')]"
+					},
+					"skythreadtest1_accountKey": {
+						"value": "[parameters('skythreadtest1_accountKey')]"
+					},
+					"skythreadtestcontainer1_accountKey": {
+						"value": "[parameters('skythreadtestcontainer1_accountKey')]"
+					},
+					"ADLSGen2_properties_typeProperties_url": {
+						"value": "[parameters('ADLSGen2_properties_typeProperties_url')]"
+					},
+					"skythreadtest1_properties_typeProperties_url": {
+						"value": "[parameters('skythreadtest1_properties_typeProperties_url')]"
+					},
+					"skythreadtestcontainer1_properties_typeProperties_url": {
+						"value": "[parameters('skythreadtestcontainer1_properties_typeProperties_url')]"
+					},
+					"trigger1_properties_typeProperties_scope": {
+						"value": "[parameters('trigger1_properties_typeProperties_scope')]"
+					}
+				}
+			},
+			"dependsOn": []
+		}
+	]
+}

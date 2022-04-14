@@ -1,0 +1,45 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "skythread-test"
+		},
+		"ADLSGen2_accountKey": {
+			"value": ""
+		},
+		"AzureBlobStorage_connectionString": {
+			"value": ""
+		},
+		"AzureTableStorage1_connectionString": {
+			"value": ""
+		},
+		"linkedService_connectionString": {
+			"value": ""
+		},
+		"skythreadtest1_accountKey": {
+			"value": ""
+		},
+		"skythreadtestcontainer1_accountKey": {
+			"value": ""
+		},
+		"ADLSGen2_properties_typeProperties_url": {
+			"value": "https://testblobstoragecont.dfs.core.windows.net"
+		},
+		"skythreadtest1_properties_typeProperties_url": {
+			"value": "https://skythreaddstest.dfs.core.windows.net"
+		},
+		"skythreadtestcontainer1_properties_typeProperties_url": {
+			"value": "https://skythreadtest.dfs.core.windows.net"
+		},
+		"trigger1_properties_typeProperties_scope": {
+			"value": "/subscriptions/0b028fc8-1762-44d8-9baa-e91ff8577ac3/resourceGroups/DefaultResourceGroup-CUS/providers/Microsoft.Storage/storageAccounts/skythreaddstest"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
