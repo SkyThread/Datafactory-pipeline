@@ -5,12 +5,18 @@
 			"referenceName": "AzureBlobStorage",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"FileName": {
+				"type": "String",
+				"defaultValue": "*.csv"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "2021-09-08 Data_Glossary_updated.csv",
+				"fileName": "*.csv",
 				"container": "test"
 			},
 			"columnDelimiter": ",",
