@@ -14,7 +14,7 @@
 		"type": "BlobEventsTrigger",
 		"typeProperties": {
 			"blobPathBeginsWith": "/test/blobs/input/",
-			"ignoreEmptyBlobs": true,
+			"ignoreEmptyBlobs": false,
 			"scope": "/subscriptions/0b028fc8-1762-44d8-9baa-e91ff8577ac3/resourceGroups/DefaultResourceGroup-CUS/providers/Microsoft.Storage/storageAccounts/skythreaddstest",
 			"events": [
 				"Microsoft.Storage.BlobCreated"
