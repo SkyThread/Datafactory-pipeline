@@ -466,7 +466,7 @@
 				],
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
-					"blobPathBeginsWith": "/test/blobs/*.csv",
+					"blobPathBeginsWith": "/test/blobs/input/",
 					"ignoreEmptyBlobs": true,
 					"scope": "[parameters('trigger1_properties_typeProperties_scope')]",
 					"events": [
