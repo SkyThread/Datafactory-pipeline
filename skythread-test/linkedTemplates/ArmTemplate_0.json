@@ -424,7 +424,9 @@
 								"type": "DataFlowReference",
 								"parameters": {},
 								"datasetParameters": {
-									"source1": {},
+									"source1": {
+										"FileName": "*.csv"
+									},
 									"sink1": {}
 								}
 							},
@@ -446,6 +448,36 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/dataflows/dataflow1')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/scheduled_trigger2')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Started",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "pipeline1",
+							"type": "PipelineReference"
+						},
+						"parameters": {}
+					}
+				],
+				"type": "ScheduleTrigger",
+				"typeProperties": {
+					"recurrence": {
+						"frequency": "Minute",
+						"interval": 3,
+						"startTime": "2022-04-17T13:02:00Z",
+						"timeZone": "UTC"
+					}
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/pipeline1')]"
 			]
 		},
 		{
