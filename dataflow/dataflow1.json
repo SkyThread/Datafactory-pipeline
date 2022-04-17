@@ -75,7 +75,7 @@
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false,",
-				"     moveFiles: ['/input','Archieved']) ~> source1",
+				"     moveFiles: ['input','Archieved']) ~> source1",
 				"source1 sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     filePattern:'csvtojson_output',",
