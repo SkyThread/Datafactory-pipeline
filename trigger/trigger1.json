@@ -13,7 +13,7 @@
 		],
 		"type": "BlobEventsTrigger",
 		"typeProperties": {
-			"blobPathBeginsWith": "/datafactory-st/blobs/",
+			"blobPathBeginsWith": "/test/blobs/*.csv",
 			"ignoreEmptyBlobs": true,
 			"scope": "/subscriptions/0b028fc8-1762-44d8-9baa-e91ff8577ac3/resourceGroups/DefaultResourceGroup-CUS/providers/Microsoft.Storage/storageAccounts/skythreaddstest",
 			"events": [
