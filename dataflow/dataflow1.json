@@ -123,7 +123,7 @@
 				"     skipDuplicateMapOutputs: true,",
 				"     mapColumn(",
 				"          event_type = {},",
-				"          Column_2,",
+				"          event_occurrenceid = Column_2,",
 				"          Column_3,",
 				"          Column_4,",
 				"          Column_5,",
