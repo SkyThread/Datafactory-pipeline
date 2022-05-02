@@ -113,7 +113,7 @@
 				"     moveFiles: ['','Archieved']) ~> KLM",
 				"Parker sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
-				"     partitionFileNames:['parkert_json'],",
+				"     partitionFileNames:['parker_json'],",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true,",
 				"     saveOrder: 1,",
