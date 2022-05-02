@@ -19,144 +19,191 @@
 		},
 		"schema": [
 			{
+				"name": "order_no",
 				"type": "String"
 			},
 			{
+				"name": "order_type    ",
 				"type": "String"
 			},
 			{
+				"name": "order_owner_company_code",
 				"type": "String"
 			},
 			{
+				"name": "assigned_company_code",
 				"type": "String"
 			},
 			{
+				"name": "creation_date",
 				"type": "String"
 			},
 			{
+				"name": "order_status",
 				"type": "String"
 			},
 			{
+				"name": "closure_date",
 				"type": "String"
 			},
 			{
+				"name": "aircraft_tail_no",
 				"type": "String"
 			},
 			{
+				"name": "warranty_requested",
 				"type": "String"
 			},
 			{
+				"name": "special_instructions",
 				"type": "String"
 			},
 			{
+				"name": "requested_work_scope",
 				"type": "String"
 			},
 			{
+				"name": "requested_airworthiness_tag",
 				"type": "String"
 			},
 			{
+				"name": "requested_condition ",
 				"type": "String"
 			},
 			{
+				"name": "priority",
 				"type": "String"
 			},
 			{
+				"name": "event_type",
 				"type": "String"
 			},
 			{
+				"name": "event_date",
 				"type": "String"
 			},
 			{
+				"name": "event_location",
 				"type": "String"
 			},
 			{
+				"name": "part_occurrence_status",
 				"type": "String"
 			},
 			{
+				"name": "event_reason",
 				"type": "String"
 			},
 			{
+				"name": "customer_purchase_order_no",
 				"type": "String"
 			},
 			{
+				"name": "customer_purchase_order_line_item_no",
 				"type": "String"
 			},
 			{
+				"name": "request_by_date",
 				"type": "String"
 			},
 			{
+				"name": "supplier_code",
 				"type": "String"
 			},
 			{
+				"name": "customer_code",
 				"type": "String"
 			},
 			{
+				"name": "part_no",
 				"type": "String"
 			},
 			{
+				"name": "serial_no ",
 				"type": "String"
 			},
 			{
+				"name": "part_mod_stack",
 				"type": "String"
 			},
 			{
+				"name": "condition",
 				"type": "String"
 			},
 			{
+				"name": "airworthiness_tag_type",
 				"type": "String"
 			},
 			{
+				"name": "airworthiness_tag_date",
 				"type": "String"
 			},
 			{
+				"name": "warranty_terms",
 				"type": "String"
 			},
 			{
+				"name": "supplier_code_birth",
 				"type": "String"
 			},
 			{
+				"name": "manuf_type ",
 				"type": "String"
 			},
 			{
+				"name": "birth_date",
 				"type": "String"
 			},
 			{
+				"name": "birth_location",
 				"type": "String"
 			},
 			{
+				"name": "commit_order_quantity",
 				"type": "String"
 			},
 			{
+				"name": "order_quantity",
 				"type": "String"
 			},
 			{
+				"name": "unit_measure_code",
 				"type": "String"
 			},
 			{
+				"name": "shipping_date",
 				"type": "String"
 			},
 			{
+				"name": "ship_to_code",
 				"type": "String"
 			},
 			{
+				"name": "specified_shipping_method_code",
 				"type": "String"
 			},
 			{
+				"name": "commit_delivery_date",
 				"type": "String"
 			},
 			{
+				"name": "priority_code",
 				"type": "String"
 			},
 			{
+				"name": "awb_no        ",
 				"type": "String"
 			},
 			{
+				"name": "po_line_item_status",
 				"type": "String"
 			},
 			{
+				"name": "purchase_order_status",
 				"type": "String"
 			},
 			{
+				"name": "StatusCode",
 				"type": "String"
 			}
 		]
