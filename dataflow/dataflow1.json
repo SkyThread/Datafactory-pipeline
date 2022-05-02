@@ -122,8 +122,8 @@
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true,",
 				"     mapColumn(",
-				"          event_type = {},",
-				"          event_occurrenceid = Column_2",
+				"          EventType = event_type,",
+				"          OrderNo = order_no",
 				"     )) ~> sink2"
 			]
 		}
