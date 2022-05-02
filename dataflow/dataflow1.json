@@ -116,7 +116,8 @@
 				"     partitionFileNames:['parkert_json'],",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true,",
-				"     saveOrder: 1) ~> sink1",
+				"     saveOrder: 1,",
+				"     partitionBy('hash', 1)) ~> sink1",
 				"KLM sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     partitionFileNames:['klm_data_json'],",
@@ -126,7 +127,8 @@
 				"     mapColumn(",
 				"          EventType = event_type,",
 				"          OrderNo = order_no",
-				"     )) ~> sink2"
+				"     ),",
+				"     partitionBy('hash', 1)) ~> sink2"
 			]
 		}
 	}
