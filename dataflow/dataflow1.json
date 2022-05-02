@@ -9,7 +9,7 @@
 						"referenceName": "DelimitedText1",
 						"type": "DatasetReference"
 					},
-					"name": "source1"
+					"name": "Parker"
 				},
 				{
 					"dataset": {
@@ -57,7 +57,7 @@
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false,",
-				"     moveFiles: ['/input','Archieved']) ~> source1",
+				"     moveFiles: ['/input','Archieved']) ~> Parker",
 				"source(output(",
 				"          order_no as string,",
 				"          {order_type    } as string,",
@@ -111,7 +111,7 @@
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false,",
 				"     moveFiles: ['','Archieved']) ~> KLM",
-				"source1 sink(allowSchemaDrift: true,",
+				"Parker sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     filePattern:'csvtojson_output',",
 				"     skipDuplicateMapInputs: true,",
