@@ -113,7 +113,7 @@
 				"     moveFiles: ['','Archieved']) ~> KLM",
 				"Parker sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
-				"     filePattern:'csvtojson_output',",
+				"     partitionFileNames:['parkert_json'],",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true,",
 				"     partitionBy('hash', 1)) ~> sink1",
