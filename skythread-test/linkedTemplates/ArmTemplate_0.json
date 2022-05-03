@@ -760,7 +760,7 @@
 				],
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
-					"blobPathBeginsWith": "/test/blobs/input/",
+					"blobPathBeginsWith": "/test/blobs/",
 					"ignoreEmptyBlobs": false,
 					"scope": "[parameters('trigger1_properties_typeProperties_scope')]",
 					"events": [
